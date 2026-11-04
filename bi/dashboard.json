@@ -1,0 +1,59 @@
+{
+  "title": "VibroLab — saved inspections",
+  "charts": [
+    {
+      "title": "All saved inspections (including demo)",
+      "table": "bi_inspection_total",
+      "columns": [
+        "inspection_count"
+      ],
+      "viz_type": "big_number_total",
+      "metric": "inspection_count"
+    },
+    {
+      "title": "Diagnoses",
+      "table": "bi_diagnoses",
+      "columns": [
+        "predicted_class",
+        "input_type",
+        "inspection_count"
+      ],
+      "viz_type": "echarts_timeseries_bar",
+      "metric": "inspection_count",
+      "groupby": [
+        "predicted_class",
+        "input_type"
+      ]
+    },
+    {
+      "title": "Work status",
+      "table": "bi_work_status",
+      "columns": [
+        "work_status",
+        "input_type",
+        "inspection_count"
+      ],
+      "viz_type": "echarts_timeseries_bar",
+      "metric": "inspection_count",
+      "groupby": [
+        "work_status",
+        "input_type"
+      ]
+    },
+    {
+      "title": "Inspection detail by day",
+      "table": "bi_inspection_details",
+      "columns": [
+        "inspection_date",
+        "asset_type",
+        "predicted_class",
+        "state_key",
+        "work_status",
+        "input_type",
+        "inspection_count",
+        "avg_confidence"
+      ],
+      "viz_type": "table"
+    }
+  ]
+}
