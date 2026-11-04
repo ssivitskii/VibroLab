@@ -46,3 +46,8 @@ htmlcov/
 *.log
 *.tmp
 runtime/
+
+# Local BI state and generated snapshots
+bi/.env
+bi/data/
+bi/demo-runtime/
